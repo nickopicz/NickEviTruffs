@@ -8,7 +8,7 @@ export default function AboutScreen() {
 		{
 			id: '1',
 			name: 'Nicholas Ciraulo',
-			image: require('../assets/Nick_Sample.jpg'), // Replace with your image path or URL
+			image: require('../assets/Nick_Sample.JPG'), // Replace with your image path or URL
 			description:
 				'Nicholas, a truffle enthusiast, co-founded this company after traveling and exploring the culinary applications of Truffles in Greece and Italy. He now has an extensive knowledge for the nuances of truffle hunting. His passion for quality produce and gourmet foods led him to create this business.',
 		},
@@ -38,9 +38,9 @@ export default function AboutScreen() {
 			marginVertical: 20,
 		},
 		ownerImage: {
-			width: 150,
-			height: 150,
-			borderRadius: 75, // This will make the image round
+			width: 250,
+			height: 250,
+			borderRadius: 125, // This will make the image round
 			marginVertical: 10,
 		},
 		ownerName: {

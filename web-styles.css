@@ -1,0 +1,14 @@
+/* web-styles.css */
+.stickyHeader {
+	position: -webkit-sticky; /* For Safari */
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+.stickyTabs {
+	position: -webkit-sticky; /* For Safari */
+	position: sticky;
+	top: 50px; /* adjust this based on your header height */
+	z-index: 999;
+}
