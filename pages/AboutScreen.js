@@ -65,29 +65,33 @@ export default function AboutScreen() {
 				<CustomText type={'title'}>About Truffles</CustomText>
 				<CustomText type={'subtitle'}>
 					Truffles, often referred to as the "diamonds of the kitchen", are a
-					rare and sought-after underground fungi, primarily associated with oak
-					and hazel trees. There are various types, each with its unique aroma
-					and flavor profile. The{' '}
+					rare and sought-after underground fungi, primarily associated with
+					oak, pine, and hazel trees. There are various types, each with its
+					unique aroma and flavor profile. When it comes to Greek truffles,
+					their supreme quality is attributed to the country's unique soil
+					composition, diverse microclimates, and the ancient trees found in its
+					forests. These conditions contribute to the development of truffles
+					with highly complex and developed flavor profiles, making them a
+					gastronomic treasure. As Greece's truffle industry grows, connoisseurs
+					worldwide are starting to recognize the distinctive and unparalleled
+					taste these truffles offer. The{' '}
 					<WikiLink url="https://en.wikipedia.org/wiki/Tuber_magnatum">
 						White Truffle (Tuber magnatum)
 					</WikiLink>{' '}
-					from Alba, Italy, and the{' '}
+					, or Alba Truffle, is typically known to come from Alba, Italy, and
+					the{' '}
 					<WikiLink url="https://en.wikipedia.org/wiki/Tuber_melanosporum">
 						Black Périgord Truffle (Tuber melanosporum)
 					</WikiLink>{' '}
-					from France are among the most coveted. Another notable variety is the{' '}
+					typically known to come from France are among the most coveted.
+					Another notable variety is the{' '}
 					<WikiLink url="https://en.wikipedia.org/wiki/Tuber_aestivum">
 						Burgundy or Summer Truffle (Tuber aestivum)
 					</WikiLink>
 					. Interesting enough, truffles have a symbiotic relationship with the
-					trees they grow with, exchanging nutrients with their roots. Now, when
-					it comes to Greek truffles, their supreme quality is attributed to the
-					country's unique soil composition, diverse microclimates, and the
-					ancient trees found in its forests. These conditions contribute to the
-					development of truffles with highly complex and developed flavor
-					profiles, making them a gastronomic treasure. As Greece's truffle
-					industry grows, connoisseurs worldwide are starting to recognize the
-					distinctive and unparalleled taste these truffles offer.
+					trees they grow with, exchanging nutrients with their roots. When used
+					with care, truffles can be an unparalleled addition to a dish,
+					creating a decadent dining experience.
 				</CustomText>
 
 				{people.map((person) => (
