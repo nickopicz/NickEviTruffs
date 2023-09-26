@@ -107,7 +107,7 @@ export default function TruffleCatalogScreen({ navigation }) {
 			//midpoint is 470
 			if (
 				currentScrollY > videoPosition &&
-				currentScrollY < videoPosition + 1810
+				currentScrollY < videoPosition + 2000
 			) {
 				console.log('video playable: ', isVideoPlayable);
 				console.log('video playing: ', isVideoPlaying);
@@ -191,6 +191,7 @@ export default function TruffleCatalogScreen({ navigation }) {
 										<CustomText
 											key={index}
 											type={'text'}
+											style={{ color: 'blue' }}
 											onPress={() =>
 												window.open(image.wikiLinks[index], '_blank')
 											}
@@ -224,6 +225,7 @@ export default function TruffleCatalogScreen({ navigation }) {
 										<CustomText
 											key={index}
 											type={'text'}
+											style={{ color: 'blue' }}
 											onPress={() =>
 												window.open(image.wikiLinks[index], '_blank')
 											}

@@ -39,62 +39,82 @@ const CustomTabBar = ({ state, descriptors, navigation }) => {
 	return (
 		<View
 			style={{
-				flexDirection: 'row',
-				justifyContent: 'space-evenly',
+				flexDirection: 'row', // <-- Change this to row
+				justifyContent: 'space-between',
 				height: 120,
 				alignItems: 'center',
 				backgroundColor: Colors.secondary,
 			}}
 		>
-			{state.routes.map((route, index) => {
-				const { options } = descriptors[route.key];
-				const label =
-					options.tabBarLabel !== undefined
-						? options.tabBarLabel
-						: options.title !== undefined
-						? options.title
-						: route.name;
-				const isFocused = state.index === index;
+			<View style={{ flex: 1 }}></View> {/* Empty space */}
+			<CustomText
+				style={{
+					color: Colors.tertiary,
+					fontSize: 44,
+					fontWeight: 'bold',
+				}}
+			>
+				Lefka Truffs
+			</CustomText>
+			<View
+				style={{
+					flex: 3, // Adjust this value for desired space distribution
+					flexDirection: 'row',
+					justifyContent: 'space-evenly',
+					alignItems: 'center',
+				}}
+			>
+				{state.routes.map((route, index) => {
+					const { options } = descriptors[route.key];
+					const label =
+						options.tabBarLabel !== undefined
+							? options.tabBarLabel
+							: options.title !== undefined
+							? options.title
+							: route.name;
+					const isFocused = state.index === index;
 
-				const onPress = () => {
-					const event = navigation.emit({
-						type: 'tabPress',
-						target: route.key,
-						canPreventDefault: true,
-					});
+					const onPress = () => {
+						const event = navigation.emit({
+							type: 'tabPress',
+							target: route.key,
+							canPreventDefault: true,
+						});
 
-					if (!isFocused && !event.defaultPrevented) {
-						navigation.navigate(route.name);
-					}
-				};
+						if (!isFocused && !event.defaultPrevented) {
+							navigation.navigate(route.name);
+						}
+					};
 
-				return (
-					<Pressable
-						key={index}
-						onPress={onPress}
-						style={{ flexDirection: 'column', alignItems: 'center' }} // <-- Side by side positioning
-					>
-						<Ionicons
-							name={
-								route.name === 'About'
-									? isFocused
-										? 'information-circle'
-										: 'information-circle-outline'
-									: isFocused
-									? 'images'
-									: 'images-outline'
-							} // Adjust your logic here if needed
-							size={35}
-							color={isFocused ? Colors.tertiary : Colors.primary}
-						/>
-						<CustomText
-							style={{ color: isFocused ? Colors.tertiary : Colors.primary }}
+					return (
+						<Pressable
+							key={index}
+							onPress={onPress}
+							style={{ flexDirection: 'column', alignItems: 'center' }} // <-- Side by side positioning
 						>
-							{label}
-						</CustomText>
-					</Pressable>
-				);
-			})}
+							<Ionicons
+								name={
+									route.name === 'About'
+										? isFocused
+											? 'information-circle'
+											: 'information-circle-outline'
+										: isFocused
+										? 'images'
+										: 'images-outline'
+								} // Adjust your logic here if needed
+								size={35}
+								color={isFocused ? Colors.tertiary : Colors.primary}
+							/>
+							<CustomText
+								style={{ color: isFocused ? Colors.tertiary : Colors.primary }}
+							>
+								{label}
+							</CustomText>
+						</Pressable>
+					);
+				})}
+			</View>
+			<View style={{ flex: 1 }}></View> {/* Empty space */}
 		</View>
 	);
 };
