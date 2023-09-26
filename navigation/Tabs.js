@@ -21,14 +21,6 @@ export const HomeTabs = () => {
 				className="stickyTabs"
 				initialRouteName="Catalog"
 				tabBar={(props) => <CustomTabBar {...props} />} // <-- Custom tab bar
-				tabBarOptions={{
-					activeTintColor: Colors.primary,
-					inactiveTintColor: Colors.tertiary,
-
-					indicatorStyle: {
-						backgroundColor: Colors.primary,
-					},
-				}}
 			>
 				<Tab.Screen
 					name="Catalog"

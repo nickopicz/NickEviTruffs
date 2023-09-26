@@ -64,6 +64,22 @@ export default function AboutScreen() {
 				<CustomText type={'subtitle'}>
 					Truffles are a type of fungi that grow underground in close proximity
 					to tree roots. They are a delicacy in many cuisines worldwide.
+					Truffles, often referred to as the "diamonds of the kitchen", are a
+					rare and sought-after underground fungi, primarily associated with oak
+					and hazel trees. There are various types, each with its unique aroma
+					and flavor profile. The White Truffle (Tuber magnatum) from Alba,
+					Italy, and the Black Périgord Truffle (Tuber melanosporum) from France
+					are among the most coveted. Another notable variety is the Burgundy or
+					Summer Truffle (Tuber aestivum). Interesting enough, truffles have a
+					symbiotic relationship with the trees they grow with, exchanging
+					nutrients with their roots. Now, when it comes to Greek truffles,
+					their supreme quality is attributed to the country's unique soil
+					composition, diverse microclimates, and the ancient trees found in its
+					forests. These conditions contribute to the development of truffles
+					with highly complex and developed flavor profiles, making them a
+					gastronomic treasure. As Greece's truffle industry grows, connoisseurs
+					worldwide are starting to recognize the distinctive and unparalleled
+					taste these truffles offer.
 				</CustomText>
 
 				{people.map((person) => (
